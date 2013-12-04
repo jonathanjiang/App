@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="CreditApplicationList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/CreditApplicationList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <ContentType ID="0x010083162616cdf54938b1d2e58b6094382c" Name="ListFieldsContentType">
+        <FieldRefs>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{b5726ba1-fdfa-4609-aad8-a3b95487e7d0}" Name="CreditAp" />
+          <FieldRef ID="{83180fbb-253c-4b17-9392-d829f6f5ff99}" Name="CompanyName" />
+          <FieldRef ID="{10cd26e2-defe-474f-87bb-680c12b5c3a9}" Name="BusinessSector" />
+          <FieldRef ID="{a392cb79-0d75-48de-8b13-d048dc961ca6}" Name="ProductLine" />
+          <FieldRef ID="{09439411-14ac-42a4-8421-a3adbebda228}" Name="CustomerName" />
+          <FieldRef ID="{21fe0634-5b57-49f5-8b45-63153e8726c5}" Name="SAPCode" />
+          <FieldRef ID="{5c29931c-0ffe-4c2b-a8d3-502c5062618e}" Name="TypeOfCompany" />
+          <FieldRef ID="{517f44b6-575c-4be1-bf85-7cdf3a629a07}" Name="Address" />
+          <FieldRef ID="{e199cd10-88ef-4554-a8cc-b207c90cd05d}" Name="ContactPerson" />
+          <FieldRef ID="{2b9685f9-1201-49de-aff5-285395767074}" Name="TelFax" />
+          <FieldRef ID="{bc7e8bef-0ebd-4390-aaf3-68ddd20fc0e7}" Name="Email" />
+          <FieldRef ID="{31a64d7e-8bbb-4919-89ea-f1290eab3388}" Name="TotalExposure" />
+          <FieldRef ID="{264abea7-b228-44e1-afa3-70d289a2c7c6}" Name="CreditAssessment" />
+          <FieldRef ID="{ba7e8f9c-02ed-4be2-9852-f71480696a48}" Name="TypeOfCredit" />
+          <FieldRef ID="{983af7e2-b18e-4fc6-bac0-da415995f4c7}" Name="RequestType" />
+          <FieldRef ID="{2cf04fec-8b4a-4220-aae4-81880eda7caf}" Name="SalesPerson" />
+          <FieldRef ID="{ba45d7bc-8a4f-431e-a0af-da1035f2d305}" Name="SalesPersonAccount" />
+          <FieldRef ID="{a51bb4dc-806d-499e-a92b-6d20074c3c72}" Name="SalesAssistant" />
+          <FieldRef ID="{9633b308-13f7-44e3-a4bd-a41bbff5f89a}" Name="SalesAssistantAccount" />
+          <FieldRef ID="{bb2e4724-25ec-4a00-bd52-9367fd761b5f}" Name="WorkflowStatus" />
+          <FieldRef ID="{744da53d-3116-4a09-84bf-4d9fbc46269d}" Name="PaymentTermOneOff" />
+          <FieldRef ID="{44e15b2c-9423-4c66-9eea-20333ed8fde6}" Name="PaymentTermRolling" />
+          <FieldRef ID="{3ca09281-f28c-41c9-bc08-38540bd4eb64}" Name="OriginalCreditAmout" />
+          <FieldRef ID="{2111c3f3-db96-4b87-ab21-3ff743b98a01}" Name="RequestCreditAmout" />
+          <FieldRef ID="{35363960-D998-4aad-B7E8-058DFE2C669E}" Name="Completed" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Name="CreditAp" ID="{b5726ba1-fdfa-4609-aad8-a3b95487e7d0}" DisplayName="Credit Application Approval" Type="Choice" ReadOnly="TRUE">
+        <CHOICES>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <CHOICE>Starting</CHOICE>
+          <CHOICE>Failed on Start</CHOICE>
+          <CHOICE>In Progress</CHOICE>
+          <CHOICE>Error Occurred</CHOICE>
+          <CHOICE>Canceled</CHOICE>
+          <CHOICE>Completed</CHOICE>
+          <CHOICE>Rejected</CHOICE>
+          <CHOICE>Completed</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="CompanyName" ID="{83180fbb-253c-4b17-9392-d829f6f5ff99}" DisplayName="Company Name" Type="Choice">
+        <CHOICES>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <CHOICE>1507APV_Shanghai</CHOICE>
+          <CHOICE>2185 APV_ChinaComm</CHOICE>
+          <CHOICE>2415 APV_Taiwan</CHOICE>
+          <CHOICE>2416 APV_HongKong</CHOICE>
+          <CHOICE>Anhydro_China</CHOICE>
+          <CHOICE>Anhydro_HongKong</CHOICE>
+          <CHOICE>Flow_Shanghai</CHOICE>
+          <CHOICE>LTN_China</CHOICE>
+          <CHOICE>PE_WGQ</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="BusinessSector" ID="{10cd26e2-defe-474f-87bb-680c12b5c3a9}" DisplayName="Business Sector" Type="Choice">
+        <CHOICES>
+          <CHOICE>Industry</CHOICE>
+          <CHOICE>F&amp;B</CHOICE>
+          <CHOICE>P&amp;E</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="ProductLine" ID="{a392cb79-0d75-48de-8b13-d048dc961ca6}" DisplayName="Product Line" Type="Choice">
+        <CHOICES>
+          <CHOICE>Industry- PHE</CHOICE>
+          <CHOICE>Industry- Lightnin Mixers</CHOICE>
+          <CHOICE>F&amp;B- Fluid Handing</CHOICE>
+          <CHOICE>F&amp;B- System</CHOICE>
+          <CHOICE>P&amp;E- D&amp;F/DHE</CHOICE>
+          <CHOICE>P&amp;E- Copes Vulcan</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="SalesPerson" ID="{2cf04fec-8b4a-4220-aae4-81880eda7caf}" DisplayName="Sales Person" Type="User" />
+      <!--<Field Name="SalesPersonAccount" ID="{ba45d7bc-8a4f-431e-a0af-da1035f2d305}" DisplayName="Sales Person Account" Type="Text" />-->
+      <Field Name="SalesAssistant" ID="{a51bb4dc-806d-499e-a92b-6d20074c3c72}" DisplayName="Sales Assistant" Type="User" />
+      <!--<Field Name="SalesAssistantAccount" ID="{9633b308-13f7-44e3-a4bd-a41bbff5f89a}" DisplayName="Sales Assistant Account" Type="Text" />-->
+      <Field Name="CustomerName" ID="{09439411-14ac-42a4-8421-a3adbebda228}" DisplayName="Customer Name" Type="Text" />
+      <Field Name="SAPCode" ID="{21fe0634-5b57-49f5-8b45-63153e8726c5}" DisplayName="SAPCode" Type="Text" />
+      <Field Name="TypeOfCompany" ID="{5c29931c-0ffe-4c2b-a8d3-502c5062618e}" DisplayName="Type Of Company" Type="Text" />
+      <Field Name="Address" ID="{517f44b6-575c-4be1-bf85-7cdf3a629a07}" DisplayName="Address" Type="Text" />
+      <Field Name="ContactPerson" ID="{e199cd10-88ef-4554-a8cc-b207c90cd05d}" DisplayName="Contact Person" Type="Text" />
+      <Field Name="TelFax" ID="{2b9685f9-1201-49de-aff5-285395767074}" DisplayName="Tel/Fax" Type="Text" />
+      <Field Name="Email" ID="{bc7e8bef-0ebd-4390-aaf3-68ddd20fc0e7}" DisplayName="Email" Type="Text" />
+      <Field Name="TotalExposure" ID="{31a64d7e-8bbb-4919-89ea-f1290eab3388}" DisplayName="Total Exposure" Type="Text" />
+      <Field Name="CreditAssessment" ID="{264abea7-b228-44e1-afa3-70d289a2c7c6}" DisplayName="Credit Assessment" Type="Text" />
+      <Field Name="TypeOfCredit" ID="{ba7e8f9c-02ed-4be2-9852-f71480696a48}" DisplayName="Type Of Credit" Type="Text" />
+      <Field Name="RequestType" ID="{983af7e2-b18e-4fc6-bac0-da415995f4c7}" DisplayName="Request Type" Type="Text" />
+
+      <Field Name="WorkflowStatus" ID="{bb2e4724-25ec-4a00-bd52-9367fd761b5f}" DisplayName="Workflow Status" Type="Calculated">
+        <Formula>="CA"&amp;[ID]</Formula>
+      </Field>
+      <Field Name="PaymentTermOneOff" ID="{744da53d-3116-4a09-84bf-4d9fbc46269d}" DisplayName="Payment Term-OneOff" Type="Text" />
+      <Field Name="PaymentTermRolling" ID="{44e15b2c-9423-4c66-9eea-20333ed8fde6}" DisplayName="Payment Term-Rolling" Type="Text" />
+      <Field Name="OriginalCreditAmout" ID="{3ca09281-f28c-41c9-bc08-38540bd4eb64}" DisplayName="Original Credit Amout" Type="Text" />
+      <Field Name="RequestCreditAmout" ID="{2111c3f3-db96-4b87-ab21-3ff743b98a01}" DisplayName="Request Credit Amout" Type="Text" />
+      <Field ID="{35363960-D998-4aad-B7E8-058DFE2C669E}" Name="Completed" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Completed" Group="$Resources:core,Base_Columns;" Type="Boolean" DisplayName="Completed" Hidden="TRUE" Sealed="TRUE">
+        <Default>FALSE</Default>
+      </Field>
+    </Fields>
+    <Views>
+
+
+
+
+
+
+
+
+
+
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+
+
+
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+
+
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="CreditAp" />
+          <FieldRef Name="CompanyName" />
+          <FieldRef Name="CustomerName" />
+          <FieldRef Name="SAPCode" />
+          <FieldRef Name="TotalExposure" />
+          <FieldRef Name="BusinessSector" />
+          <FieldRef Name="ProductLine" />
+          <FieldRef Name="CreditAssessment" />
+          <FieldRef Name="TypeOfCredit" />
+          <FieldRef Name="TypeOfCompany" />
+          <FieldRef Name="RequestType" />
+          <FieldRef Name="SalesPerson" />
+          <FieldRef Name="SalesPersonAccount" />
+          <FieldRef Name="SalesAssistant" />
+          <FieldRef Name="SalesAssistantAccount" />
+          <FieldRef Name="WorkflowStatus" />
+          <FieldRef Name="PaymentTermOneOff" />
+          <FieldRef Name="PaymentTermRolling" />
+          <FieldRef Name="OriginalCreditAmout" />
+          <FieldRef Name="RequestCreditAmout" />
+          <FieldRef Name="Address" />
+          <FieldRef Name="ContactPerson" />
+          <FieldRef Name="TelFax" />
+          <FieldRef Name="Email" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+
+
+
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+       ID="{41714841-ef89-4819-8d54-1b0d874c342a}"
+       Name="CompanyName"
+       DisplayName="Company Name"
+       Type="Text"
+       Required="FALSE"
+       Group="Credit Application Columns">
+  </Field>
+  <Field
+    ID="{F4878883-C354-4409-9435-43BC679B3B7C}"
+    Name="ProductLine"
+    DisplayName="Product Line"
+    Type="Text"
+    Required="TRUE"
+    Group="Credit Application Columns"></Field>
+  <Field
+    ID="{0A1FF099-FF6B-44CC-8E69-8FD4535102CC}"
+     Name="TotalAmount"
+     DisplayName="Total Amount"
+    Type="Number"
+    Decimals="2"
+    Required="TRUE"
+    Group="Credit Application Columns"></Field>
+  <Field ID="{FC22D9B6-D8EE-41A2-B5CC-C28F0AAFF173}" DisplayName="Credit Application Approval" StaticName="CreditAp" Name="CreditAp" Type="CHOICES" ReadOnly="TRUE" >
+    <CHOICES>
+      <CHOICE>Starting</CHOICE>
+      <CHOICE>Failed on Start</CHOICE>
+      <CHOICE>In Progress</CHOICE>
+      <CHOICE>Error Occurred</CHOICE>
+      <CHOICE>Canceled</CHOICE>
+      <CHOICE>Completed</CHOICE>
+      <CHOICE>Rejected</CHOICE>
+    </CHOICES>
+  </Field>
+</Elements>
